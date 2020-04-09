@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="76.308" tests="7" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="14+36-1461"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14\bin"/>
+    <property name="user.country.format" value="UA"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Max\IdeaProjects\SpringDemo\promUaTest"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Max\IdeaProjects\SpringDemo\promUaTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="14+36-1461"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Max\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-14\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\Max\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;C:\Program Files\Java\jdk-12.0.1\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\bin;;C:\Program Files\Git\cmd;C:\Program Files\Git\bin\git.exe;;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="idea.version2019.3.4" value="true"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Max"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="Max"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.4 clean test -Demail.password=Max4511507143!"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-14"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language.format" value="ru"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.3\plugins\maven\lib\maven3"/>
+    <property name="email.password" value="Max4511507143!"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-03-17"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testAutocompleteAndSearchTermPresisting" classname="com.promUA.tests.SearchTests" time="16.817"/>
+  <testcase name="testCompanyRegistration" classname="com.promUA.tests.RegistrationTest" time="0.236"/>
+  <testcase name="testMailVerificationAfterRegistration" classname="com.promUA.tests.RegistrationTest" time="2.994">
+    <failure message="This operation is not allowed on a closed folder" type="java.lang.IllegalStateException">java.lang.IllegalStateException: This operation is not allowed on a closed folder
+	at com.sun.mail.imap.IMAPFolder.close(IMAPFolder.java:955)
+	at com.sun.mail.imap.IMAPFolder.close(IMAPFolder.java:935)
+	at com.promUA.util.MailHelper.closeStore(MailHelper.java:41)
+	at com.promUA.util.MailHelper.getMessegeSubjectForReceiver(MailHelper.java:95)
+	at com.promUA.tests.RegistrationTest.testMailVerificationAfterRegistration(RegistrationTest.java:41)
+</failure>
+    <system-err>[DelegatingClassLoader@1ee3f4c1] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1ee3f4c1] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@53ef7bc] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@53ef7bc] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[1586449982.851][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586449982.951][SEVERE]: Timed out receiving message from renderer: 0.100
+javax.mail.FolderClosedException
+	at com.sun.mail.imap.IMAPMessage.getProtocol(IMAPMessage.java:133)
+	at com.sun.mail.imap.IMAPMessage.loadEnvelope(IMAPMessage.java:1147)
+	at com.sun.mail.imap.IMAPMessage.getRecipients(IMAPMessage.java:258)
+	at javax.mail.Message.getAllRecipients(Message.java:292)
+	at javax.mail.internet.MimeMessage.getAllRecipients(MimeMessage.java:520)
+	at com.promUA.util.MailHelper.getMessegeSubjectForReceiver(MailHelper.java:87)
+	at com.promUA.tests.RegistrationTest.testMailVerificationAfterRegistration(RegistrationTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</system-err>
+  </testcase>
+  <testcase name="testAutocompleteAndSearchTermPresisting" classname="com.promUA.tests.SearchTests" time="6.092">
+    <failure message="Element should be hidden {div[data-qaid=&apos;autocomplete_block&apos;]}&#10;Element: &apos;StaleElementReferenceException: stale element reference: element is not attached to the page document&apos;" type="com.codeborne.selenide.ex.ElementShould">com.codeborne.selenide.ex.ElementShould: Element should be hidden {div[data-qaid='autocomplete_block']}
+Element: 'StaleElementReferenceException: stale element reference: element is not attached to the page document'
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.waitUntil(Unknown Source)
+	at com.promUA.pages.HomePage.searchFor(HomePage.java:45)
+	at com.promUA.tests.SearchTests.testAutocompleteAndSearchTermPresisting(SearchTests.java:47)
+</failure>
+    <system-err>[1586449985.528][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586449985.669][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586449985.774][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586449986.619][SEVERE]: Timed out receiving message from renderer: 0.100
+���. 09, 2020 7:33:08 PM com.codeborne.selenide.impl.ScreenShotLaboratory ensureFolderExists
+INFO: Creating folder: C:\Users\Max\IdeaProjects\SpringDemo\promUaTest\target\selenide-report
+</system-err>
+  </testcase>
+  <testcase name="testAutocompleteAndSearchTermPresisting" classname="com.promUA.tests.SearchTests" time="4.042"/>
+  <testcase name="testValidateProductsOnPage" classname="com.promUA.tests.SearchTests" time="22.592">
+    <failure message="Element not found {$$(90 elements)[1]}&#10;Expected: exist" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: Element not found {$$(90 elements)[1]}
+Expected: exist
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:22)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:8)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.text(Unknown Source)
+	at com.promUA.pages.ProductListPage.getProductTexts(ProductListPage.java:26)
+	at com.promUA.tests.SearchTests.testValidateProductsOnPage(SearchTests.java:62)
+</failure>
+    <system-err>[DelegatingClassLoader@5231e167] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@5231e167] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@622ee449] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@622ee449] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@58331039] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@58331039] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2eed9fce] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2eed9fce] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2342bfc4] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2342bfc4] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@63379c93] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@63379c93] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3fdc0c17] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3fdc0c17] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@a20e96f] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@a20e96f] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1adf1e41] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@1adf1e41] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@26c3cd9b] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@26c3cd9b] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2372d6c5] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@2372d6c5] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3ce079ef] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@3ce079ef] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@14f682a1] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@14f682a1] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[1586449994.237][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586449994.353][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586449994.496][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586449995.054][SEVERE]: Timed out receiving message from renderer: 0.100
+[DelegatingClassLoader@6ebf03c6] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@6ebf03c6] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+</system-err>
+  </testcase>
+  <testcase name="testValidateProductsOnPage" classname="com.promUA.tests.SearchTests" time="23.535">
+    <failure message="Element not found {$$(90 elements)[10]}&#10;Expected: exist" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: Element not found {$$(90 elements)[10]}
+Expected: exist
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:22)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:8)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.text(Unknown Source)
+	at com.promUA.pages.ProductListPage.getProductTexts(ProductListPage.java:28)
+	at com.promUA.tests.SearchTests.testValidateProductsOnPage(SearchTests.java:62)
+</failure>
+    <system-err>[DelegatingClassLoader@6e4b91f7] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@6e4b91f7] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@b6fb788] error at io\qameta\allure\aspects\StepsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[DelegatingClassLoader@b6fb788] error at io\qameta\allure\aspects\AttachmentsAspects.java::0 the @annotation pointcut expression is only supported at Java 5 compliance level or above
+[1586450016.990][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586450017.157][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586450017.273][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586450017.807][SEVERE]: Timed out receiving message from renderer: 0.100
+[1586450018.096][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
+</testsuite>

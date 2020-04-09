@@ -1,0 +1,4 @@
+com\promUA\tests\BaseTests.class
+com\promUA\tests\RegistrationTest.class
+com\promUA\tests\SearchTests.class
+com\promUA\util\TestHelper.class

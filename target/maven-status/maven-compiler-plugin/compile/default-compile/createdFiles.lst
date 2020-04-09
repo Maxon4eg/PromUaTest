@@ -1,0 +1,9 @@
+com\promUA\pages\LoginPage.class
+com\promUA\util\MailHelper$1.class
+com\promUA\pages\CompanyProfile.class
+com\promUA\pages\RegistrationPage.class
+com\promUA\App.class
+com\promUA\pages\ProductListPage.class
+com\promUA\util\MailHelper.class
+com\promUA\pages\HomePage.class
+com\promUA\util\AppProperties.class

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Debug suite " configfailurepolicy="continue" parallel="classes" thread-count="10">
+
+
+    <test name="Prom UA  Tests ">
+        <parameter name="baseUrl" value="https://prom1111.ua"/>
+
+        <packages>
+            <package name="com.promUA.tests.*"/>
+        </packages>
+    </test>
+
+
+</suite>

@@ -1,0 +1,74 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 74.57 sec <<< FAILURE!
+testMailVerificationAfterRegistration(com.promUA.tests.RegistrationTest)  Time elapsed: 2.994 sec  <<< FAILURE!
+java.lang.IllegalStateException: This operation is not allowed on a closed folder
+	at com.sun.mail.imap.IMAPFolder.close(IMAPFolder.java:955)
+	at com.sun.mail.imap.IMAPFolder.close(IMAPFolder.java:935)
+	at com.promUA.util.MailHelper.closeStore(MailHelper.java:41)
+	at com.promUA.util.MailHelper.getMessegeSubjectForReceiver(MailHelper.java:95)
+	at com.promUA.tests.RegistrationTest.testMailVerificationAfterRegistration(RegistrationTest.java:41)
+
+testAutocompleteAndSearchTermPresisting(com.promUA.tests.SearchTests)  Time elapsed: 6.092 sec  <<< FAILURE!
+com.codeborne.selenide.ex.ElementShould: Element should be hidden {div[data-qaid='autocomplete_block']}
+Element: 'StaleElementReferenceException: stale element reference: element is not attached to the page document'
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.waitUntil(Unknown Source)
+	at com.promUA.pages.HomePage.searchFor(HomePage.java:45)
+	at com.promUA.tests.SearchTests.testAutocompleteAndSearchTermPresisting(SearchTests.java:47)
+
+testValidateProductsOnPage(com.promUA.tests.SearchTests)  Time elapsed: 22.592 sec  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: Element not found {$$(90 elements)[1]}
+Expected: exist
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:22)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:8)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.text(Unknown Source)
+	at com.promUA.pages.ProductListPage.getProductTexts(ProductListPage.java:26)
+	at com.promUA.tests.SearchTests.testValidateProductsOnPage(SearchTests.java:62)
+
+testValidateProductsOnPage(com.promUA.tests.SearchTests)  Time elapsed: 23.535 sec  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: Element not found {$$(90 elements)[10]}
+Expected: exist
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:22)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:8)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.text(Unknown Source)
+	at com.promUA.pages.ProductListPage.getProductTexts(ProductListPage.java:28)
+	at com.promUA.tests.SearchTests.testValidateProductsOnPage(SearchTests.java:62)
+

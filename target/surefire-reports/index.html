@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Debug_suite_" class="navigator-link">
+              <span class="suite-name border-failed">Debug suite </span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Debug_suite_" class="navigator-link ">
+                    <span>C:\Users\Max\IdeaProjects\SpringDemo\promUaTest\test_runners\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Debug_suite_" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Debug_suite_" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Debug_suite_" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Debug_suite_" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Debug_suite_" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Debug_suite_" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 4 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Debug_suite_" class="hide-methods failed suite-Debug_suite_"> (hide)</a> <!-- hide-methods failed suite-Debug_suite_ -->
+                      <a href="#" panel-name="suite-Debug_suite_" class="show-methods failed suite-Debug_suite_"> (show)</a> <!-- show-methods failed suite-Debug_suite_ -->
+                    </span>
+                    <div class="method-list-content failed suite-Debug_suite_">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Debug_suite_" title="com.promUA.tests.SearchTests" class="method navigator-link" hash-for-method="testAutocompleteAndSearchTermPresisting(телевизор)">testAutocompleteAndSearchTermPresisting(телевизор)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Debug_suite_" title="com.promUA.tests.RegistrationTest" class="method navigator-link" hash-for-method="testMailVerificationAfterRegistration">testMailVerificationAfterRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Debug_suite_" title="com.promUA.tests.SearchTests" class="method navigator-link" hash-for-method="testValidateProductsOnPage(телевизор)">testValidateProductsOnPage(телевизор)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Debug_suite_" title="com.promUA.tests.SearchTests" class="method navigator-link" hash-for-method="testValidateProductsOnPage(плеер)">testValidateProductsOnPage(плеер)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Debug_suite_ -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Debug_suite_" class="hide-methods passed suite-Debug_suite_"> (hide)</a> <!-- hide-methods passed suite-Debug_suite_ -->
+                      <a href="#" panel-name="suite-Debug_suite_" class="show-methods passed suite-Debug_suite_"> (show)</a> <!-- show-methods passed suite-Debug_suite_ -->
+                    </span>
+                    <div class="method-list-content passed suite-Debug_suite_">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Debug_suite_" title="com.promUA.tests.SearchTests" class="method navigator-link" hash-for-method="testAutocompleteAndSearchTermPresisting(доберман)">testAutocompleteAndSearchTermPresisting(доберман)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Debug_suite_" title="com.promUA.tests.SearchTests" class="method navigator-link" hash-for-method="testAutocompleteAndSearchTermPresisting(плеер)">testAutocompleteAndSearchTermPresisting(плеер)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Debug_suite_" title="com.promUA.tests.RegistrationTest" class="method navigator-link" hash-for-method="testCompanyRegistration">testCompanyRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Debug_suite_ -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Debug_suite_" class="panel Debug_suite_">
+          <div class="suite-Debug_suite_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.promUA.tests.SearchTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAutocompleteAndSearchTermPresisting(телевизор)">
+                  </a> <!-- testAutocompleteAndSearchTermPresisting(телевизор) -->
+                  <span class="method-name">testAutocompleteAndSearchTermPresisting</span>
+                  <span class="parameters">(телевизор)</span>
+                  <div class="stack-trace">Element should be hidden {div[data-qaid=&apos;autocomplete_block&apos;]}
+Element: &apos;StaleElementReferenceException: stale element reference: element is not attached to the page document&apos;
+Screenshot: file:/C:/Users/Max/IdeaProjects/SpringDemo/promUaTest/target/selenide-report/1586449987678.0.png
+Timeout: 3 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.waitUntil(Unknown Source)
+	at com.promUA.pages.HomePage.searchFor(HomePage.java:45)
+	at com.promUA.tests.SearchTests.testAutocompleteAndSearchTermPresisting(SearchTests.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidateProductsOnPage(телевизор)">
+                  </a> <!-- testValidateProductsOnPage(телевизор) -->
+                  <span class="method-name">testValidateProductsOnPage</span>
+                  <span class="parameters">(телевизор)</span>
+                  <div class="stack-trace">Element not found {$$(90 elements)[10]}
+Expected: exist
+Screenshot: file:/C:/Users/Max/IdeaProjects/SpringDemo/promUaTest/target/selenide-report/1586450038182.2.png
+Timeout: 7 s.
+Caused by: StaleElementReferenceException: stale element reference: element is not attached to the page document
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
+	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:48)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.text(Unknown Source)
+	at com.promUA.pages.ProductListPage.getProductTexts(ProductListPage.java:28)
+	at com.promUA.tests.SearchTests.testValidateProductsOnPage(SearchTests.java:62)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8GVSN4E&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Max\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49964}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6d4c75367a94ab177889d0d8e7414578
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:22)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:8)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	... 17 more
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidateProductsOnPage(плеер)">
+                  </a> <!-- testValidateProductsOnPage(плеер) -->
+                  <span class="method-name">testValidateProductsOnPage</span>
+                  <span class="parameters">(плеер)</span>
+                  <div class="stack-trace">Element not found {$$(90 elements)[1]}
+Expected: exist
+Screenshot: file:/C:/Users/Max/IdeaProjects/SpringDemo/promUaTest/target/selenide-report/1586450014636.1.png
+Timeout: 7 s.
+Caused by: StaleElementReferenceException: stale element reference: element is not attached to the page document
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
+	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:48)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.text(Unknown Source)
+	at com.promUA.pages.ProductListPage.getProductTexts(ProductListPage.java:26)
+	at com.promUA.tests.SearchTests.testValidateProductsOnPage(SearchTests.java:62)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8GVSN4E&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Max\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49964}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6d4c75367a94ab177889d0d8e7414578
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:22)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:8)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	... 17 more
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Debug_suite_-class-failed -->
+          <div class="suite-Debug_suite_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.promUA.tests.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMailVerificationAfterRegistration">
+                  </a> <!-- testMailVerificationAfterRegistration -->
+                  <span class="method-name">testMailVerificationAfterRegistration</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: This operation is not allowed on a closed folder
+	at com.sun.mail.imap.IMAPFolder.close(IMAPFolder.java:955)
+	at com.sun.mail.imap.IMAPFolder.close(IMAPFolder.java:935)
+	at com.promUA.util.MailHelper.closeStore(MailHelper.java:41)
+	at com.promUA.util.MailHelper.getMessegeSubjectForReceiver(MailHelper.java:95)
+	at com.promUA.tests.RegistrationTest.testMailVerificationAfterRegistration(RegistrationTest.java:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verification of received mail )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Debug_suite_-class-failed -->
+          <div class="suite-Debug_suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.promUA.tests.SearchTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAutocompleteAndSearchTermPresisting(доберман)">
+                  </a> <!-- testAutocompleteAndSearchTermPresisting(доберман) -->
+                  <span class="method-name">testAutocompleteAndSearchTermPresisting</span>
+                  <span class="parameters">(доберман)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAutocompleteAndSearchTermPresisting(плеер)">
+                  </a> <!-- testAutocompleteAndSearchTermPresisting(плеер) -->
+                  <span class="method-name">testAutocompleteAndSearchTermPresisting</span>
+                  <span class="parameters">(плеер)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Debug_suite_-class-passed -->
+          <div class="suite-Debug_suite_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.promUA.tests.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCompanyRegistration">
+                  </a> <!-- testCompanyRegistration -->
+                  <span class="method-name">testCompanyRegistration</span>
+                  <em>
+(Company registration test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Debug_suite_-class-passed -->
+        </div> <!-- panel Debug_suite_ -->
+        <div panel-name="test-xml-Debug_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Max\IdeaProjects\SpringDemo\promUaTest\test_runners\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; thread-count=&quot;10&quot; parallel=&quot;classes&quot; name=&quot;Debug suite &quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;classes&quot; name=&quot;Prom UA  Tests &quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;baseUrl&quot; value=&quot;https://prom1111.ua&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.promUA.tests.*&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.promUA.tests.BaseTests&quot;/&gt;
+      &lt;class name=&quot;com.promUA.tests.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;com.promUA.tests.SearchTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Prom UA  Tests  --&gt;
+&lt;/suite&gt; &lt;!-- Debug suite  --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Debug_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Debug suite </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Prom UA  Tests  (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Debug_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Debug suite </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Debug_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Debug suite </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Debug_suite_');
+function tableData_Debug_suite_() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testValidateProductsOnPage')
+data.setCell(0, 2, 'com.promUA.tests.SearchTests')
+data.setCell(0, 3, 23534);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testValidateProductsOnPage')
+data.setCell(1, 2, 'com.promUA.tests.SearchTests')
+data.setCell(1, 3, 22592);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCompanyRegistration')
+data.setCell(2, 2, 'com.promUA.tests.RegistrationTest')
+data.setCell(2, 3, 17064);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testAutocompleteAndSearchTermPresisting')
+data.setCell(3, 2, 'com.promUA.tests.SearchTests')
+data.setCell(3, 3, 16933);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testAutocompleteAndSearchTermPresisting')
+data.setCell(4, 2, 'com.promUA.tests.SearchTests')
+data.setCell(4, 3, 6351);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testAutocompleteAndSearchTermPresisting')
+data.setCell(5, 2, 'com.promUA.tests.SearchTests')
+data.setCell(5, 3, 4042);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testMailVerificationAfterRegistration')
+data.setCell(6, 2, 'com.promUA.tests.RegistrationTest')
+data.setCell(6, 3, 2980);
+window.suiteTableData['Debug_suite_']= { tableData: data, tableDiv: 'times-div-Debug_suite_'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Debug_suite_">
+              </div> <!-- times-div-Debug_suite_ -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Debug_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Debug suite </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Debug_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.promUA.tests.SearchTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.promUA.tests.RegistrationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Debug_suite_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.promUA.tests.BaseTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite(https://prom.ua)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.promUA.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.promUA.tests.SearchTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAutocompleteAndSearchTermPresisting(плеер)</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.promUA.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCompanyRegistration</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.promUA.tests.SearchTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAutocompleteAndSearchTermPresisting(телевизор)</span>
+                <span class="method-start">17025 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.promUA.tests.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">17281 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMailVerificationAfterRegistration</span>
+                <span class="method-start">17284 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.promUA.tests.SearchTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAutocompleteAndSearchTermPresisting(доберман)</span>
+                <span class="method-start">23378 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidateProductsOnPage(плеер)</span>
+                <span class="method-start">27474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidateProductsOnPage(телевизор)</span>
+                <span class="method-start">50075 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.promUA.tests.BaseTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">73662 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

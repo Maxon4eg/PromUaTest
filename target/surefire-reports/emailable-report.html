@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Debug suite </th></tr>
+<tr><td><a href="#t0">Prom UA  Tests </a></td><td class="num">3</td><td class="num">0</td><td class="num attn">4</td><td class="num">73 562</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Debug suite </th></tr></tbody><tbody id="t0"><tr><th colspan="4">Prom UA  Tests  &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.promUA.tests.RegistrationTest</td><td><a href="#m0">testMailVerificationAfterRegistration</a></td><td rowspan="1">1586449982191</td><td rowspan="1">2980</td></tr><tr class="failedodd"><td rowspan="3">com.promUA.tests.SearchTests</td><td><a href="#m1">testAutocompleteAndSearchTermPresisting</a></td><td rowspan="1">1586449981932</td><td rowspan="1">6351</td></tr><tr class="failedodd"><td><a href="#m2">testValidateProductsOnPage</a></td><td rowspan="2">1586450014982</td><td rowspan="2">23534</td></tr><tr class="failedodd"><td><a href="#m3">testValidateProductsOnPage</a></td></tr><tr><th colspan="4">Prom UA  Tests  &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.promUA.tests.RegistrationTest</td><td><a href="#m4">testCompanyRegistration</a></td><td rowspan="1">1586449965104</td><td rowspan="1">17064</td></tr><tr class="passedodd"><td rowspan="2">com.promUA.tests.SearchTests</td><td><a href="#m5">testAutocompleteAndSearchTermPresisting</a></td><td rowspan="2">1586449988285</td><td rowspan="2">4042</td></tr><tr class="passedodd"><td><a href="#m6">testAutocompleteAndSearchTermPresisting</a></td></tr></tbody>
+</table>
+<h2>Prom UA  Tests </h2><h3 id="m0">com.promUA.tests.RegistrationTest#testMailVerificationAfterRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: This operation is not allowed on a closed folder
+	at com.sun.mail.imap.IMAPFolder.close(IMAPFolder.java:955)
+	at com.sun.mail.imap.IMAPFolder.close(IMAPFolder.java:935)
+	at com.promUA.util.MailHelper.closeStore(MailHelper.java:41)
+	at com.promUA.util.MailHelper.getMessegeSubjectForReceiver(MailHelper.java:95)
+	at com.promUA.tests.RegistrationTest.testMailVerificationAfterRegistration(RegistrationTest.java:41)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.promUA.tests.SearchTests#testAutocompleteAndSearchTermPresisting</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>телевизор</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element should be hidden {div[data-qaid=&apos;autocomplete_block&apos;]}
+Element: &apos;StaleElementReferenceException: stale element reference: element is not attached to the page document&apos;
+Screenshot: file:/C:/Users/Max/IdeaProjects/SpringDemo/promUaTest/target/selenide-report/1586449987678.0.png
+Timeout: 3 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.waitUntil(Unknown Source)
+	at com.promUA.pages.HomePage.searchFor(HomePage.java:45)
+	at com.promUA.tests.SearchTests.testAutocompleteAndSearchTermPresisting(SearchTests.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.promUA.tests.SearchTests#testValidateProductsOnPage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>телевизор</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {$$(90 elements)[10]}
+Expected: exist
+Screenshot: file:/C:/Users/Max/IdeaProjects/SpringDemo/promUaTest/target/selenide-report/1586450038182.2.png
+Timeout: 7 s.
+Caused by: StaleElementReferenceException: stale element reference: element is not attached to the page document
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
+	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:48)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.text(Unknown Source)
+	at com.promUA.pages.ProductListPage.getProductTexts(ProductListPage.java:28)
+	at com.promUA.tests.SearchTests.testValidateProductsOnPage(SearchTests.java:62)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8GVSN4E&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Max\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49964}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6d4c75367a94ab177889d0d8e7414578
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:22)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:8)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	... 17 more
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.promUA.tests.SearchTests#testValidateProductsOnPage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>плеер</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {$$(90 elements)[1]}
+Expected: exist
+Screenshot: file:/C:/Users/Max/IdeaProjects/SpringDemo/promUaTest/target/selenide-report/1586450014636.1.png
+Timeout: 7 s.
+Caused by: StaleElementReferenceException: stale element reference: element is not attached to the page document
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
+	at com.codeborne.selenide.impl.CollectionElement.createElementNotFoundError(CollectionElement.java:48)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy21.text(Unknown Source)
+	at com.promUA.pages.ProductListPage.getProductTexts(ProductListPage.java:26)
+	at com.promUA.tests.SearchTests.testValidateProductsOnPage(SearchTests.java:62)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8GVSN4E&apos;, ip: &apos;192.168.0.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Max\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49964}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6d4c75367a94ab177889d0d8e7414578
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:22)
+	at com.codeborne.selenide.commands.GetText.execute(GetText.java:8)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
+	... 17 more
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.promUA.tests.RegistrationTest#testCompanyRegistration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.promUA.tests.SearchTests#testAutocompleteAndSearchTermPresisting</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>доберман</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.promUA.tests.SearchTests#testAutocompleteAndSearchTermPresisting</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>плеер</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
